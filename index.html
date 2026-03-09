@@ -42,9 +42,6 @@ nav::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; heig
 .btn-primary:hover { background: transparent; color: var(--text-secondary); }
 .btn-ghost { font-size: 10px; letter-spacing: 0.28em; text-transform: uppercase; color: var(--text-dim); border: 1px solid var(--border); padding: 13px 26px; text-decoration: none; transition: color 0.3s, border-color 0.3s; }
 .btn-ghost:hover { color: var(--text-secondary); border-color: rgba(255,255,255,0.2); }
-.hero-scroll { position: absolute; bottom: 48px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 12px; opacity: 0; animation: fadeUp 1s cubic-bezier(0.4,0,0.2,1) 2.6s forwards; }
-.hero-scroll span { font-size: 9px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--text-dim); }
-.scroll-line { width: 1px; height: 48px; background: linear-gradient(to bottom, var(--text-dim), transparent); animation: scrollPulse 2.2s ease-in-out infinite; }
 
 .section-label { font-size: 10px; letter-spacing: 0.4em; text-transform: uppercase; color: var(--text-dim); margin-bottom: 64px; display: flex; align-items: center; gap: 20px; }
 .section-label::before { content: ''; width: 40px; height: 1px; background: var(--text-dim); flex-shrink: 0; }
@@ -109,7 +106,7 @@ nav::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; heig
 .p-spotify::before { background: linear-gradient(135deg,rgba(30,215,96,0.07),transparent); }
 .p-apple::before   { background: linear-gradient(135deg,rgba(252,60,86,0.07),transparent); }
 .p-yt::before      { background: linear-gradient(135deg,rgba(255,80,0,0.07),transparent); }
-.p-lastfm::before  { background: linear-gradient(135deg,rgba(139,92,246,0.07),transparent); }
+.p-linktree::before { background: linear-gradient(135deg,rgba(139,92,246,0.07),transparent); }
 .platform-icon { font-size: 22px; color: var(--text-dim); }
 .platform-name { font-size: 10px; letter-spacing: 0.3em; text-transform: uppercase; color: var(--text-dim); transition: color 0.3s; }
 .platform-card:hover .platform-name { color: var(--text-secondary); }
@@ -179,7 +176,6 @@ footer span { font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase
         <a href="https://open.spotify.com/artist/4V5ZYFsSIBwDFJ1Z3MjFic" target="_blank" class="btn-ghost">Open Spotify</a>
       </div>
     </div>
-    <div class="hero-scroll"><span>Scroll</span><div class="scroll-line"></div></div>
   </section>
 
   <div class="section-divider"></div>
@@ -211,7 +207,7 @@ footer span { font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase
         <span class="track-num">02</span>
         <div class="track-info"><span class="track-title">Flourish</span><span class="track-meta">Ambient &middot; Electronic</span></div>
         <div class="track-right">
-          <div class="track-time"><span class="cur">0:00</span><span>&nbsp;</span><span class="tot">-:--</span></div>
+          <div class="track-time"><span class="cur">0:00</span><span>&nbsp;/&nbsp;</span><span class="tot">-:--</span></div>
           <div class="track-play-btn"><svg viewBox="0 0 12 14" fill="currentColor"><path d="M1 1l10 6-10 6V1z"/></svg></div>
         </div>
         <div class="track-accent" style="background:linear-gradient(to right,#8b5cf6,#06b6d4)"></div>
@@ -266,9 +262,9 @@ footer span { font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase
     <div class="section-label reveal">About</div>
     <div class="about-inner">
       <h2 class="about-heading reveal reveal-delay-1">Sounds that exist<br>between <em>spaces</em></h2>
-      <p class="about-text reveal reveal-delay-2">Wiljan is an electronic music producer from Belgium, crafting immersive soundscapes that sit at the intersection of ambient atmosphere and cinematic depth.</p>
-      <p class="about-text reveal reveal-delay-3">Drawing from the quiet landscapes and grey skies of Belgium, the music explores texture, space, and the emotional weight of silence. Each track is designed to be a place &mdash; somewhere to inhabit rather than simply hear.</p>
-      <p class="about-text reveal reveal-delay-4">Working across ambient, downtempo, chillout and electronic genres, the sound resists easy categorisation. What unites it is restraint &mdash; knowing exactly what not to add.</p>
+      <p class="about-text reveal reveal-delay-2">My name is Wiljan. I'm a music producer from Belgium focused on creating cinematic and electronic soundtracks.</p>
+      <p class="about-text reveal reveal-delay-3">My passion is making music that sounds organic, modern and can create emotion through its melodies.</p>
+      <p class="about-text reveal reveal-delay-4">Over a decade of experience has taught me to create music in multiple styles and genres, while developing and evolving my own sound.</p>
       <div class="genre-tags reveal">
         <span class="genre-tag">Ambient</span>
         <span class="genre-tag">Electronic</span>
@@ -287,7 +283,7 @@ footer span { font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase
       <a href="https://open.spotify.com/artist/4V5ZYFsSIBwDFJ1Z3MjFic" target="_blank" class="platform-card p-spotify reveal reveal-delay-1"><span class="platform-icon">&#9835;</span><span class="platform-name">Spotify</span><span class="platform-arrow">&#8599;</span></a>
       <a href="https://music.apple.com/search?term=wiljan" target="_blank" class="platform-card p-apple reveal reveal-delay-2"><span class="platform-icon">&#9834;</span><span class="platform-name">Apple Music</span><span class="platform-arrow">&#8599;</span></a>
       <a href="https://www.youtube.com/@wiljanmusic" target="_blank" class="platform-card p-yt reveal reveal-delay-3"><span class="platform-icon">&#9654;</span><span class="platform-name">YouTube</span><span class="platform-arrow">&#8599;</span></a>
-      <a href="https://linktr.ee/wiljanmusic" target="_blank" class="platform-card p-lastfm reveal reveal-delay-4"><span class="platform-icon">&#9645;</span><span class="platform-name">Linktree</span><span class="platform-arrow">&#8599;</span></a>
+      <a href="https://linktr.ee/wiljanmusic" target="_blank" class="platform-card p-linktree reveal reveal-delay-4"><span class="platform-icon">&#9645;</span><span class="platform-name">Linktree</span><span class="platform-arrow">&#8599;</span></a>
     </div>
   </section>
 
@@ -300,7 +296,7 @@ footer span { font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase
       <p class="contact-text reveal reveal-delay-2">Open to collaborations, sync licensing, and conversations about sound.</p>
       <div class="contact-links reveal reveal-delay-3">
         <a href="https://open.spotify.com/artist/4V5ZYFsSIBwDFJ1Z3MjFic" target="_blank" class="contact-link"><span>Follow on Spotify</span><span class="cl-arrow">&#8599;</span></a>
-        <a href="mailto:contact@wiljan.be" class="contact-link"><span>contact@wiljan.be</span><span class="cl-arrow">&#8599;</span></a>
+        <a href="mailto:contact@wiljanmusic.com" class="contact-link"><span>contact@wiljanmusic.com</span><span class="cl-arrow">&#8599;</span></a>
       </div>
     </div>
   </section>
